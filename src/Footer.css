@@ -1,0 +1,46 @@
+/* Footer.css */
+
+.footer-container {
+    background-color: #032c3d;
+    color: #f8f6f6;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.contact-info,
+.quick-links,
+.subscribe,
+.social-media {
+    margin: 10px;
+    color: #f7f1f1;
+}
+
+.quick-links h3,
+.subscribe h3,
+.social-media h3 { /* Apply the style to the h3 tag within .social-media */
+    color: #FFD700; /* Change to yellow */
+    font-weight: bold; /* Make the text bold */
+    font-size: 1.2em; /* Decrease the heading size */
+}
+
+.social-media a {
+    margin-right: 10px; /* Add margin between social media icons */
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #f7f1f1;
+}
+
+a:hover {
+    color: #FFC800;
+    font-weight: bold; /* Make the text bold on hover */
+}

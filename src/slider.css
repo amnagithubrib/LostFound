@@ -1,0 +1,183 @@
+.lost-and-found-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1100px; /* Increased container width */
+  margin: 50px auto; /* Added margin for spacing */
+}
+
+.form-content {
+  flex: 1;
+  padding: 30px;
+  border: 1px solid #ddd;
+  border-radius: 15px; /* Increased border radius */
+  background-color: #f0f0f0; /* Lighter background color */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.card-content {
+  flex: 1;
+  padding: 30px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.submit-button {
+  background-color: #FFD700; /* Lighter shade of yellow */
+  color: white;
+  padding: 15px 20px; /* Increased padding for buttons */
+  border: none;
+  border-radius: 10px; /* Rounded corners */
+  cursor: pointer;
+  margin-top: 15px; /* Added space above the buttons */
+  margin-right: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Added box shadow */
+  transition: background-color 0.3s, transform 0.3s; /* Smooth transition for hover effect */
+}
+
+.submit-button:hover {
+  background-color: #FFC800; /* Darker shade on hover */
+  transform: scale(1.05); /* Scale effect on hover */
+}
+
+.submit-button.lost {
+  background-color:  #0c3053; /* Change the color for the lost button */
+}
+
+.submit-button .found {
+  background-color: #FFD700;
+}
+
+/* Additional styling for headings and text */
+h1, h3, h6, p {
+  color: #333;
+}
+
+p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Add styling for the right-side card content if needed */
+/* Form.css */
+.looping-cards {
+  display: flex;
+  perspective: 1000px; /* Adjust the perspective value for the 3D effect */
+}
+
+/* Form.css */
+
+/* Form.css */
+
+/* ... (previous styles) */
+
+/* Card Styles */
+.card {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  margin: 0 10px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transform-style: preserve-3d;
+  transform: rotateY(0deg);
+  transition: transform 1.5s ease-in-out; /* Adjusted the transition duration */
+}
+
+/* Card Image Styles */
+.card img {
+  width: 180%;
+  height: 100%;
+  object-fit: cover;
+  transform: translateZ(150px);
+}
+
+/* Additional Card Styles for 3D Looping Effect */
+.card:nth-child(2) {
+  transform: rotateY(120deg);
+}
+
+.card:nth-child(3) {
+  transform: rotateY(240deg);
+}
+
+/* Responsive Styles for Larger Screens */
+@media (min-width: 768px) {
+  .card {
+    max-width: 100%;
+  }
+}
+
+/* Responsive Styles for Smaller Screens */
+@media (max-width: 480px) {
+  .card img {
+    height: 50%;
+  }
+}
+
+h1, h3, h6, p {
+  color: #333;
+}
+
+p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Form layout adjustments for smaller screens */
+@media (max-width: 768px) {
+  .lost-and-found-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .form-content {
+    max-width: 100%; /* Full width for smaller screens */
+    margin-bottom: 20px; /* Added margin between form and cards */
+  }
+
+  .card-content {
+    order: -1; /* Move cards below the form */
+  }
+
+  .looping-cards {
+    flex-direction: column;
+  }
+
+  /* Card Styles for smaller screens */
+  .card {
+    max-width: 100%;
+    width: auto;
+    margin: 10px 0; /* Added margin between cards */
+  }
+
+  /* Card Image Styles for smaller screens */
+  .card img {
+    width: 100%;
+    height: auto;
+  }
+}

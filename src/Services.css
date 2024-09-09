@@ -1,0 +1,42 @@
+.service {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(12, 48, 83, 0.5);
+  color: #0c3053;
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.step1 {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  margin: 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  background-color: #FFC800;
+}
+
+.step1:hover {
+  transform: scale(1.05);
+}
+
+.step1 h5 {
+  margin: 10px 0 0;
+  font-size: 16px;
+  color: #0c3053;
+}
+
+/* Adjust the color and size as needed */
+.step1 svg {
+  color: #0c3053;
+  font-size: 2em;
+}

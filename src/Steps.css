@@ -1,0 +1,82 @@
+.lost-found-form {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 15px;
+    background-color: #0c3053;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(12, 48, 83, 0.5);
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+  }
+  
+  .step-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  
+  .steps {
+    margin: 0;
+    text-align: center;
+  }
+  
+  .step {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #FFC800;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    
+  }
+  
+  .step:hover {
+    transform: scale(1.05);
+  }
+  
+  .tick-icon {
+    color: #0c3053;
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+
+  .heading{
+    font-size: 20px;
+    color: #fff;
+    margin: 0;
+  }
+  .heading1{
+    font-size: 20px;
+    color: #fff;
+  }
+  
+  @media screen and (min-width: 600px) {
+    .lost-found-form {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+    .step-container {
+      margin-top: 0;
+    }
+  
+    .steps {
+      margin-left: 20px;
+      text-align: left;
+    }
+  
+    .step {
+      width: 48%;
+      margin-right: 2%;
+    }
+  }
